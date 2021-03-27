@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333;
+}
+
+.borderExample {
+    border: 1px solid #fff;
+}
+
+.container {
+    margin: 0 auto;
+    width: 75%;
+    padding: 1rem;
+}
+
+nav {
+    width: 100%;
+}
+
+footer {
+    bottom: 0;
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        width: 71%;
+        background-color: blue;
+    }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 93%;
+        background-color: olive;
+    }
+}
