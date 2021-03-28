@@ -2,7 +2,6 @@
 
 nav {
     height: 7.5rem;
-    background: var(--greenlight);
     align-items: center;
 }
 
@@ -97,13 +96,17 @@ section.header {
 
 .featured {
     background: #fff;
-    height: 100px;
+    height: 200px;
 }
 
 .featured div {
     height: 100%;
     align-items: center;
     justify-content: space-between;
+}
+
+.featured div a img {
+    height: 4rem;
 }
 
 /* Footer */
