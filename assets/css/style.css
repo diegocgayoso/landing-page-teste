@@ -1,6 +1,85 @@
-
 nav {
     height: 7.5rem;
     background: var(--greenlight);
     align-items: center;
+}
+
+nav .menuNav {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.itemsNav li {
+    list-style: none;
+    padding: 1rem;
+}
+
+.itemsNav li a {
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.itemsNav li a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.itemsNav li a:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.itemsNav li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+
+.menuNav .socialMedia a img {
+    height: 24px;
+    width: 24px;
+    margin: 0 10px;
+    transition: .3s;
+    filter: saturate(0%);
+}
+
+.menuNav .socialMedia a img:hover {
+    filter: saturate(100%);
+    transform: scale(1.2);
+}
+
+section.header {
+    background: url("../img/header.png ");
+    height: 60vh;
+}
+
+.headerContent {
+    align-items: center;
+}
+
+.headerContent h2, .headerContent p, .btnsDownloads a {
+    color: var(--gray);
+}
+
+.btnsDownloads a {
+    font-weight: 600;
+    text-decoration: none;
+    border: 2px solid var(--gray);
+    padding: 1.3rem 2.6rem;
+}
+
+.btnsDownloads a img {
+    height: 12px;
+}
+
+.featured {
+    background: #fff;
 }

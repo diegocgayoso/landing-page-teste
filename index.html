@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/root.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Landing Page Teste</title>
@@ -12,8 +15,8 @@
 
 <body>
     <nav class="displayFlex">
-        <div class="container borderExample">
-            <ul>
+        <div class="menuNav container displayFlex">
+            <ul class="itemsNav displayFlex">
                 <li>
                     <a href="">About</a>
                 </li>
@@ -24,16 +27,40 @@
                     <a href="">Testimonials</a>
                 </li>
             </ul>
+            <div class="socialMedia">
+                <a href=""><img src="./assets/img/facebook.svg" alt=""></a>
+                <a href=""><img src="./assets/img/twitter.svg" alt=""></a>
+                <a href=""><img src="./assets/img/google.svg" alt=""></a>
+            </div>
         </div>
     </nav>
-    <section class="header borderExample">
-        <div class="container borderExample">
+    <section class="header">
+        <div class="container">
+            <div class="headerContent">
+                <h2 class="capitalize">Take photos like a pro.</h2>
+                <p>With only your iphone and capture app you can take stunning image like a professional Photographer.
+                </p>
+                <div class="btnsDownloads">
+                    <a class="capitalize" href="">
+                        <img src="./assets/img/apple.svg" alt="">
+                        iphone app
+                    </a>
+                    <a class="capitalize" href="">
+                        <img src="./assets/img/android.svg" alt="">
+                        android app
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
-    <footer class="borderExample">
-
-    </footer>
-
+    <section>
+        <div class="featured container displayFlex">
+            <a href="">Google</a>
+            <a href="">facebook</a>
+            <a href="">Yahoo!</a>
+            <a href="">PayPal</a>
+        </div>
+    </section>
 </body>
 
 </html>
