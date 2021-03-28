@@ -1,3 +1,4 @@
+/* Menu */
 nav {
     height: 7.5rem;
     background: var(--greenlight);
@@ -48,38 +49,53 @@ nav .menuNav {
     width: 24px;
     margin: 0 10px;
     transition: .3s;
-    filter: saturate(0%);
+    filter:opacity(0.8)
+}
+.menuNav .socialMedia a img svg path{
+    
+    fill: #fff;
 }
 
 .menuNav .socialMedia a img:hover {
     filter: saturate(100%);
     transform: scale(1.2);
 }
+/* Primeira Seção - Header */
 
 section.header {
     background: url("../img/header.png ");
-    height: 60vh;
+    height: 80vh;
 }
 
 .headerContent {
-    align-items: center;
+    width:50%
+}
+
+.btn {
+    border: 1px solid var(--gray);
+    padding: 1rem 2rem;
 }
 
 .headerContent h2, .headerContent p, .btnsDownloads a {
     color: var(--gray);
 }
 
-.btnsDownloads a {
+
+.btnsDownloads .btn a {
     font-weight: 600;
     text-decoration: none;
-    border: 2px solid var(--gray);
-    padding: 1.3rem 2.6rem;
 }
 
-.btnsDownloads a img {
+.btnsDownloads img {
     height: 12px;
 }
 
+/* Featured-+ */
 .featured {
     background: #fff;
+    height:100px;
+}
+.featured div{
+    align-items: center;
+    justify-content: space-between;
 }
