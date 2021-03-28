@@ -1,4 +1,5 @@
 /* Menu */
+
 nav {
     height: 7.5rem;
     background: var(--greenlight);
@@ -49,10 +50,10 @@ nav .menuNav {
     width: 24px;
     margin: 0 10px;
     transition: .3s;
-    filter:opacity(0.8)
+    filter: opacity(0.8)
 }
-.menuNav .socialMedia a img svg path{
-    
+
+.menuNav .socialMedia a img svg path {
     fill: #fff;
 }
 
@@ -60,15 +61,18 @@ nav .menuNav {
     filter: saturate(100%);
     transform: scale(1.2);
 }
+
 /* Primeira Seção - Header */
 
 section.header {
     background: url("../img/header.png ");
+    background-size: cover;
+    background-attachment: scroll;
     height: 80vh;
 }
 
 .headerContent {
-    width:50%
+    width: 50%
 }
 
 .btn {
@@ -80,7 +84,6 @@ section.header {
     color: var(--gray);
 }
 
-
 .btnsDownloads .btn a {
     font-weight: 600;
     text-decoration: none;
@@ -91,11 +94,44 @@ section.header {
 }
 
 /* Featured-+ */
+
 .featured {
     background: #fff;
-    height:100px;
+    height: 100px;
 }
-.featured div{
+
+.featured div {
+    height: 100%;
     align-items: center;
     justify-content: space-between;
+}
+
+/* Footer */
+
+footer {
+    height: 40vh;
+    background: #464444;
+}
+
+footer .footer {
+    height: 100%;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer .footer .platform {
+    width: 100%;
+    justify-content: space-between;
+    padding: 3rem 1rem;
+}
+
+footer .footer .platform a img {
+    height: 50px;
+    width: 50px;
+}
+
+footer .footer .copyright {
+    color: #6d6a6a;
 }
