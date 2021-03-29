@@ -14,6 +14,10 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+.featured {
+    background-color: #f3f3f3;
+}
+
 nav, .features, .contact {
     background: var(--greenlight);
 }

@@ -70,13 +70,27 @@ section.header {
     height: 80vh;
 }
 
+section.header .container {
+    height: 100%;
+    align-items: center;
+}
+
 .headerContent {
-    width: 50%
+    padding: 0 6rem;
+}
+
+.headerContent>div {
+    margin: 2rem 10rem 2rem 0;
+}
+.headerContent div h2, h3 {
+    font-size: 2rem;
+    letter-spacing: 2px;
 }
 
 .btn {
-    border: 1px solid var(--gray);
+    border: 2px solid var(--gray);
     padding: 1rem 2rem;
+    margin-right: 1rem;
 }
 
 .headerContent h2, .headerContent p, .btnsDownloads a {
@@ -95,8 +109,7 @@ section.header {
 /* Featured-+ */
 
 .featured {
-    background: #fff;
-    height: 200px;
+    height: 100px;
 }
 
 .featured div {
@@ -106,7 +119,7 @@ section.header {
 }
 
 .featured div a img {
-    height: 4rem;
+    height: 3rem;
 }
 
 /* Footer */
