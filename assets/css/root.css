@@ -18,7 +18,7 @@ body {
     background-color: #f3f3f3;
 }
 
-nav, .features, .contact {
+nav, .features, .subcription {
     background: var(--greenlight);
 }
 
@@ -28,6 +28,11 @@ nav, .features, .contact {
 
 .displayFlex {
     display: flex;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
 }
 
 .borderExample {
@@ -40,7 +45,7 @@ nav, .features, .contact {
     padding: 1rem;
 }
 
-.capitalize {
+.uppercase {
     text-transform: uppercase;
 }
 
