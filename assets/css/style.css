@@ -138,16 +138,78 @@ h2, h3, p, a {
     padding: 4rem 0;
 }
 
-.appCapture .container div {
+.appCapture .container>div {
     width: 50%;
 }
 
-.appCapture .container .imgMobile {
-    display: flex;
-    justify-content: center;
+.appCapture .container .imgMobile img {
+    filter: drop-shadow(-5px 5px 5px black);
+    height: 90%;
 }
 
-/* Features */
+.appCapture .container .descriptionApp {
+    padding: 0 2rem;
+}
+
+.appCapture .container .descriptionApp>h3 {
+    margin-bottom: 1.5rem;
+    letter-spacing: .5px;
+}
+
+.appCapture .container .descriptionApp>p {
+    font-size: .9rem;
+    margin-bottom: 1.5rem;
+    line-height: 2rem;
+}
+
+.listAppCapture {
+    margin: 2rem 0;
+}
+
+.itemsAppCapture {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.itemsAppCapture>div {
+    width: 40px;
+}
+
+.itemsAppCapture p {
+    font-size: .8rem;
+    font-weight: 700;
+    position: relative;
+    left: 10px;
+}
+
+.actionAppCapture {
+    font-size: .8rem;
+    align-items: center;
+}
+.actionAppCapture .btn{
+    font-size: .8rem;
+    font-weight: 700;
+    align-items: center;
+    justify-content:space-between;
+    padding: 1rem 2rem
+}
+.actionAppCapture .btn {
+    
+
+}
+
+.actionAppCapture a {
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.actionAppCapture .btn img {
+    height: 14px;
+    margin-right: 20px;
+}
+
+/* Section Features */
 
 .features .container {
     height: 100vh;
@@ -207,7 +269,7 @@ h2, h3, p, a {
 /* Subcription */
 
 .subcription {
-    height: 40vh;
+    height: 43vh;
 }
 
 .subcription .container {
@@ -216,13 +278,14 @@ h2, h3, p, a {
 }
 
 .subcription h6 {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     font-size: 1.2rem;
     text-transform: capitalize;
     color: #fff;
     font-weight: 300;
 }
-.subcription h6 span{
+
+.subcription h6 span {
     text-transform: lowercase;
 }
 
@@ -230,17 +293,19 @@ form input {
     background-color: #fff;
     border: none;
     padding: 1rem;
-    width: 320px;
+    width: 330px;
     z-index: -1;
     /* position: relative; */
 }
+
 form .inInput {
     padding: 1rem;
     background-image: url('../img/envelope.png ');
     background-repeat: no-repeat;
     background-position: 93% center;
 }
-form .inInput::placeholder  {
+
+form .inInput::placeholder {
     color: var(--greenlight)
 }
 
